@@ -20,7 +20,7 @@ class ChirpFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->title(),
+            'title' => fake()->text(24),
             'user_id' => User::all()->random()->id,
             'excerpt' => fake()->text(128),
             'description' => fake()->text(512)
